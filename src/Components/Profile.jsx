@@ -8,9 +8,9 @@ const Profile = ({data , setData , errors }) => {
       ...prevState,
       [item] : e.target.value,
     }))
-
   }
-  return (
+
+  return(
     <> 
     <div>
 <label htmlFor="">Name :</label>
@@ -42,7 +42,6 @@ value={email}
 onChange={(e)=> handleDataChange(e, "email")}
 />   
 {errors.email && <span className='error'>{errors.email}</span>}
-
  </div>
  </> 
   )

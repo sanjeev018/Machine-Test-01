@@ -7,9 +7,9 @@ import Profile from './Profile'
 const TabForm = () => {
     
     const [data, setData] = useState({ 
-        name: "sanjeev gour",
-        age: "18",
-        email: "akshay@gmail.com",
+        name: "",
+        age: "",
+        email: "",
         interests: ["coding", "javascript"],
         theme: ["dark","light"]   
     })
@@ -93,7 +93,6 @@ const TabForm = () => {
          {activeTab < tabs.length-1 && <button onClick={handleNextClick}> Next </button>}
          {activeTab === tabs.length-1 && <button onClick={handleSubmitClick}>Submit</button>}
     </div>
-
   )
 }
 export default TabForm

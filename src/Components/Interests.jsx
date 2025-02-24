@@ -2,7 +2,6 @@ import React from 'react'
 
 const Interests = ({data, setData}) => {
   const {interests} = data
-
   const handleDataChange = (e)=> { 
     setData((prevState)=> ({
       ...prevState, 
@@ -11,6 +10,7 @@ const Interests = ({data, setData}) => {
       : prevState.interests.filter((i)=> i!== e.target.name), 
     })); 
   }; 
+
   return (
     <>   
      <div>
@@ -20,7 +20,7 @@ const Interests = ({data, setData}) => {
       name='coding' 
       checked={interests.includes("coding")} 
       onChange={handleDataChange}
-      />
+      /> 
       Coding
       </label>
     </div>
